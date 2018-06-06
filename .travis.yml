@@ -2,6 +2,8 @@ language: python
   python:
     - "3.6"
 
-  script:
-    - pytest
-script: make test
+deploy:
+  provider: azure_web_apps
+  username: MaitasRJaime     # If AZURE_WA_USERNAME isn't set
+  password: maraja96   # If AZURE_WA_PASSWORD isn't set
+  site: https://perrosmatias.azurewebsites.net/
