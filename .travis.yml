@@ -5,7 +5,3 @@ python:
 
 enviroment:
   - FLASK=0.12.1
-
-
-install:
-  - pip install flask
