@@ -2,5 +2,20 @@ language: python
 
 python:
   - 3.6
+matrix:
+  include:
+    - python: 2.7
+      dist: trusty
+      sudo: required
+      virtualenv:
+        system_site_packages: true
+      addons:
+        apt:
+          packages:
+            - python-requests
+            - python-coverage
+            - python-mock
 
- pip install -r requirements.txt
+install:
+  - pip install -r tests/requirements.txt
+  - python setup.py install
