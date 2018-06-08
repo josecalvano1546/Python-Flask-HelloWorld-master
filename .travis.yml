@@ -1,17 +1,16 @@
 language: python
 
 python:
-  - 3.6
+  - "3.6"
+
+enviroment:
+  - FLASK=0.12.1
 matrix:
-  include:
-    - python: 2.7
-      dist: trusty
-      sudo: required
-      virtualenv:
-        system_site_packages: true
-      addons:
-        apt:
-          packages:
-            - python-requests
-            - python-coverage
-            - python-mock
+    exclude:
+      - python: "3.6"
+       env: FLASK=0.12.1
+install:
+  - pip install flask==$FLASK coverage
+  - pip install -e .
+script:
+  -python main.py
