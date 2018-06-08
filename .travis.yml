@@ -15,7 +15,3 @@ matrix:
             - python-requests
             - python-coverage
             - python-mock
-
-install:
-  - pip install -r tests/requirements.txt
-  - python setup.py install
