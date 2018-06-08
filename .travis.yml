@@ -8,8 +8,7 @@ enviroment:
 
 
 install:
-  - pip install flask==$FLASK coverage
-  - pip install -e
-
+  - pip install flask=0.12.1
+  
 script:
   -python main.py
