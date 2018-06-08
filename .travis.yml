@@ -9,11 +9,11 @@ enviroment:
 matrix:
     exclude:
       - python: "3.6"
-       env: FLASK=0.12.1
+      - env: FLASK=0.12.1
 
 install:
   - pip install flask==$FLASK coverage
   - pip install -e
-  
+
 script:
   -python main.py
