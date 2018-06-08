@@ -9,6 +9,3 @@ enviroment:
 
 install:
   - pip install flask==0.12.1
-
-script:
-  -python main.py
