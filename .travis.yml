@@ -8,4 +8,4 @@ enviroment:
 
 
 install:
-  - pip install flask==0.12.1
+  - pip install flask
