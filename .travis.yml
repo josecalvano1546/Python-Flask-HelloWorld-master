@@ -1,3 +1,4 @@
+sudo: false
 language: python
 
 python:
@@ -5,7 +6,6 @@ python:
 
 enviroment:
   - FLASK=0.12.1
-install:
-  - pip install -r requirements.txt
 
-script: prueb.py
+script:
+  -prueb
