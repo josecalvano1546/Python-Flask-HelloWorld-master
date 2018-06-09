@@ -6,6 +6,3 @@ python:
 
 enviroment:
   - FLASK=0.12.1
-
-script:
-  -prueb
